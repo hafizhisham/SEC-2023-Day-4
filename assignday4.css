@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+button,
+a {
+  all: unset;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+/* Header & Nav bar */
+#main {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  background: linear-gradient(90deg, #ffffff 25%, rgba(255, 255, 255, 0) 100%),
+    url("images/bg-img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 80px;
+}
+
+nav .left {
+  display: flex;
+  gap: 40px;
+}
+
+nav .left h1 {
+  font-weight: bold;
+}
+nav .right {
+  display: flex;
+  gap: 20px;
+}
+
+nav .menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav .menu li {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  font-size: 0.8rem;
+}
+
+button.ghost {
+  cursor: pointer;
+  color: white;
+  font-weight: medium;
+}
+
+button.ghost:hover {
+  color: black;
+}
+
+button.solid {
+  cursor: pointer;
+  color: white;
+  font-weight: medium;
+  font-size: 0.875rem;
+  background-color: #23a6f0;
+  padding: 12px 15px;
+  border-radius: 4px;
+}
+
+button.solid:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+button.solid2 {
+  cursor: pointer;
+  color: white;
+  font-weight: medium;
+  background-color: #23a6f0;
+  padding: 15px 36px;
+  border-radius: 37px;
+}
+
+button.solid2:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+button.solid3 {
+  cursor: pointer;
+  color: #23a6f0;
+  font-weight: medium;
+  background-color: white;
+  padding: 15px 36px;
+  border-radius: 37px;
+  border: solid #23a6f0 1px;
+}
+
+button.solid3:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 30px;
+  width: 1000px;
+  height: 300px;
+}
+
+header .right1 {
+  display: flex;
+  gap: 20px;
+}
+
+header .up {
+  display: flex;
+  gap: 40px;
+}
+
+header .up h2 {
+  font-weight: bold;
+  font-size: 3.6rem;
+}
+header .down {
+  display: flex;
+  gap: 20px;
+}
+header .down h3 {
+  font-weight: medium;
+  font-size: 1.2rem;
+}
+
+/* Business Advice */
+#advice {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: #fafafa;
+  background-size: cover;
+  background-position: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 15px;
+  width: 1000px;
+  height: 150px;
+}
+
+article .up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+article .up h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+article .center {
+  display: flex;
+  gap: 20px;
+}
+article .center h2 {
+  font-weight: medium;
+  font-size: 1.2rem;
+  color: #737373;
+}
+
+.selectbutton {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 30px;
+  width: 1000px;
+  height: 400px;
+}
+
+.upselect {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+}
+
+.h3 {
+  font-weight: medium;
+  font-size: 0.8rem;
+  color: #737373;
+}
+
+.upselectbox {
+  box-sizing: border-box;
+  width: 280px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.upselectbox1 {
+  box-sizing: border-box;
+  width: 120px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.upselectcircle {
+  width: 72px;
+  height: 72px;
+  background-color: #23a6f0;
+  margin-top: 0px;
+  border-radius: 100%;
+}
+
+.upselectpic {
+  width: 33px;
+  height: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.downselect {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+}
+
+.downselectbox {
+  box-sizing: border-box;
+  width: 280px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.downselectbox1 {
+  box-sizing: border-box;
+  width: 120px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.qoute {
+  display: flex;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+/* Clients Say */
+#clients {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.clientstitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 1000px;
+  height: 150px;
+}
+
+.clientsup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.clientscenter {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.clientsdown {
+  width: 1000px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 120px;
+}
+
+.h4 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.h5 {
+  text-align: center;
+  font-weight: medium;
+  font-size: 1.2rem;
+  color: #737373;
+}
+
+.clientsleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.clientsright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.clientsleft1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.clientsright1 {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  /* gap: 20px; */
+}
+
+.clientsleft2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.clientsright2 {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  /* gap: 20px; */
+}
+
+.h6 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.h7 {
+  font-weight: medium;
+  font-size: 0.8rem;
+}
+
+.h8 {
+  font-weight: medium;
+  font-size: 1rem;
+  color: #737373;
+}
+
+/* Subscribe */
+#subscribe {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #252b42;
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 100px;
+  width: 1000px;
+  height: 150px;
+}
+
+footer .left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 420px;
+  gap: 20px;
+}
+
+footer .right {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  width: 350px;
+  /* gap: 20px; */
+}
+
+.h9 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.h10 {
+  font-weight: medium;
+  font-size: 0.875rem;
+  color: white;
+}
+
+footer .right1 {
+  box-sizing: border-box;
+  width: 250px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: center;
+}
+
+footer .right2 {
+  box-sizing: border-box;
+  width: 100px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: center;
+}
+
+form.email-me {
+  display: table;
+}
+
+div.email-me {
+  display: table-row;
+}
+
+label {
+  display: table-cell;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 45px;
+}
+
+input {
+  display: table-cell;
+  width: 250px;
+  height: 45px;
+}
+
+/* Button */
+button.submit {
+  cursor: pointer;
+  transition: all 200ms;
+  width: 100px;
+  height: 45px;
+  text-align: center;
+  background-color: #23a6f0;
+}
+
+button.submit:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+/* All Right Reserved */
+#reserved {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  gap: 100px;
+}
+
+.reservedleft {
+  width: 380px;
+  display: flex;
+}
+
+.reservedright {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.h11 {
+  font-weight: medium;
+  font-size: 0.875rem;
+  color: #737373;
+}
